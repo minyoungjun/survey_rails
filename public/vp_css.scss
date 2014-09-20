@@ -16,6 +16,9 @@ body {
 	border-right: 1em solid #fff;
 	border-left: 1em solid #fff;
 	text-decoration: none;
+
+	word-break: keep-all;
+
 	margin: 0;
 
 	&::before, &::after {
@@ -85,6 +88,7 @@ a {
 	margin: 0 auto;
 	padding: 4em 2em;
 	text-align: center;
+	// word-break: keep-all;
 	background: rgba(0,0,0,.05);
 
 	h1 {
