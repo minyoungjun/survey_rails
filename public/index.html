@@ -189,9 +189,11 @@
 			    var nextQuestion = $(this).closest('.section').next();
 			    
 			    if (nextQuestion.length !== 0) {
-			        $('html, body').animate({
-			            scrollTop: nextQuestion.offset().top
-			        }, 1000);
+			    	setTimeout(function(){
+				        $('html, body').animate({
+				            scrollTop: nextQuestion.offset().top
+				        }, 1000);
+				    }, 350);
 			    }
 			});
 		</script>
