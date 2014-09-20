@@ -222,6 +222,14 @@ a {
 
 
 @media screen and (max-width: 50em) {
+
+	body {
+		border: none;
+		&::before, &::after {
+			position: relative;
+		}
+	}
+
 	.section {
 		font-size: 75%;
 	}
