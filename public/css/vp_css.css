@@ -157,5 +157,8 @@ a {
   .subMenu {
     height: 2.2em; }
 
+  .navDots {
+    margin: 0 5px; }
+
   .vp-custom li {
     padding: 1.7em 0; } }
