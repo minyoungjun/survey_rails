@@ -41,25 +41,25 @@ a {
 	}
 }
 
-.navDots {
-	position: relative;
-	display: inline-block;
+// .navDots {
+// 	position: relative;
+// 	display: inline-block;
 	
-	padding: 0;
-	margin: 0 2em;
-	width: 1.2em;
-	height: 1.2em;
-	border: none;
-	border-radius: 50%;
-	cursor: pointer;
-	background: rgba(0,0,0,.2);
-}
+// 	padding: 0;
+// 	margin: 0 2em;
+// 	width: 1.2em;
+// 	height: 1.2em;
+// 	border: none;
+// 	border-radius: 50%;
+// 	cursor: pointer;
+// 	background: rgba(0,0,0,.2);
+// }
 
-.active {
-	button {
-		background: #fff;
-	}
-}
+// .active {
+// 	button {
+// 		background: #fff;
+// 	}
+// }
 
 
 .container header {
@@ -209,10 +209,6 @@ a {
 
 	.subMenu {
 		height: 2.2em;
-	}
-
-	.navDots {
-		margin: 0 5px;
 	}
 
 	.vp-custom {
