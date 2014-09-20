@@ -27,18 +27,40 @@ a {
 }
 
 .subMenu {
-	height: 3em;
+	height: 2em;
+	width: 100%;
 	z-index: 1000;
-	width: 98%;
-	left: 1%;
-	background: rgba(0,0,0,.3);
-	font-weight: 700;
-	padding: 0;
-	// margin: 0 auto;
-	margin: 1em 0;
+	background: transparent;
+	text-align: center;
+	
+	padding: 1em;
 
-	border-radius: 40px;
+	.nav {
+		// margin: 5em 0 0 0;
+		margin: 0 auto;
+	}
 }
+
+.navDots {
+	position: relative;
+	display: inline-block;
+	
+	padding: 0;
+	margin: 0 2em;
+	width: 1.2em;
+	height: 1.2em;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	background: rgba(0,0,0,.2);
+}
+
+.active {
+	button {
+		background: #fff;
+	}
+}
+
 
 .container header {
 	margin: 0 auto;
@@ -178,6 +200,7 @@ a {
 		opacity: 0.8;
 	}
 }
+
 
 @media screen and (max-width: 50em) {
 	.section {
