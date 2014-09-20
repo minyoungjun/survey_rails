@@ -29,11 +29,15 @@ a {
 .subMenu {
 	height: 3em;
 	z-index: 1000;
-	width: 100%;
+	width: 98%;
+	left: 1%;
 	background: rgba(0,0,0,.3);
 	font-weight: 700;
 	padding: 0;
-	margin: 0;
+	// margin: 0 auto;
+	margin: 1em 0;
+
+	border-radius: 40px;
 }
 
 .container header {
@@ -178,6 +182,10 @@ a {
 @media screen and (max-width: 50em) {
 	.section {
 		font-size: 75%;
+	}
+
+	.subMenu {
+		height: 2.2em;
 	}
 
 	.vp-custom {
