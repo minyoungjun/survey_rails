@@ -76,6 +76,13 @@ a {
   padding: 0 3em;
   max-width: 900px;
   margin: 0 auto; }
+  .vp-custom h1 {
+    font-size: 1.7em;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    color: rgba(0, 0, 0, 0.2); }
+    .vp-custom h1 span {
+      color: rgba(0, 0, 0, 0.35); }
   .vp-custom h2 {
     font-size: 2.4em;
     font-weight: 400;
@@ -150,11 +157,26 @@ a {
   .vp-custom input[type="radio"]:checked + label::before {
     opacity: 0.8; }
 
+.li-group {
+  display: table-cell;
+  padding-right: 5em;
+  width: 50%; }
+
+.li-group-3 {
+  display: table-cell;
+  padding-right: 7em;
+  width: 33%; }
+
 @media screen and (max-width: 50em) {
   body {
     border: none; }
     body::before, body::after {
       position: relative; }
+
+  .li-group, .li-group-3 {
+    display: block;
+    width: 100%;
+    padding: 0; }
 
   .section {
     font-size: 75%; }

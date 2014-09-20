@@ -112,6 +112,7 @@ a {
 
 .section {
 	padding: 7em 0;
+	// display: flex;
 
 	&:nth-child(even) {
 		background: rgba(0,0,0,.08);
@@ -122,6 +123,17 @@ a {
 	padding: 0 3em;
 	max-width: 900px;
 	margin: 0 auto;
+
+	h1 {
+		font-size: 1.7em;
+		font-weight: 700;
+		margin: 0 0 10px 0;
+		color: rgba(0,0,0,.2);
+
+		span {
+			color: rgba(0,0,0,.35);
+		}
+	}
 
 	h2 {
 		font-size: 2.4em;
@@ -220,6 +232,19 @@ a {
 	}
 }
 
+.li-group {
+	display: table-cell;
+	padding-right: 5em;
+	width: 50%;
+	// float: left;
+}
+
+.li-group-3 {
+	display: table-cell;
+	padding-right: 7em;
+	width: 33%;
+}
+
 
 @media screen and (max-width: 50em) {
 
@@ -228,6 +253,12 @@ a {
 		&::before, &::after {
 			position: relative;
 		}
+	}
+
+	.li-group, .li-group-3 {
+		display: block;
+		width: 100%;
+		padding: 0;
 	}
 
 	.section {
