@@ -165,8 +165,7 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
                     return false;
                 }
 
-			});	
-
+			});
 
 			//This lets yo use links in body text to scroll. Just add the class 'intLink' to your button and it will scroll
 
