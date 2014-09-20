@@ -10,8 +10,23 @@ body {
   background: #427db9;
   color: #fff;
   font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  border-right: 1em solid #fff;
+  border-left: 1em solid #fff;
   text-decoration: none;
   margin: 0; }
+  body::before, body::after {
+    content: '';
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1em;
+    background: #fff;
+    z-index: 1001; }
+  body::after {
+    top: auto;
+    bottom: 0; }
 
 a {
   color: #fff;
