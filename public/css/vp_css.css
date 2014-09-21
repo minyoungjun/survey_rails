@@ -114,6 +114,8 @@ bold {
     .vp-accordion .ac-trigger:hover:before {
       content: "\35";
       color: inherit; }
+  .vp-accordion .ac-open > .ac-trigger:before {
+    content: "\34"; }
   .vp-accordion .ac-content {
     height: 0;
     overflow: hidden;
