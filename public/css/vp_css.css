@@ -13,6 +13,19 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+.logo {
+  width: 40%;
+  height: 40%; }
+
+.logo_main {
+  fill: rgba(0, 0, 0, 0.2); }
+
+.fallback {
+  display: none; }
+
+.no-svg .fallback {
+  background-image: url(snu_logo.png); }
+
 body {
   background: #427db9;
   color: #fff;
@@ -55,6 +68,13 @@ bold {
   padding: 1em; }
   .subMenu .nav {
     margin: 0 auto; }
+
+.container {
+  background-image: url(../snu_logo.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: scroll;
+  background-size: 60vw 60vh; }
 
 .container header {
   margin: 0 auto;
