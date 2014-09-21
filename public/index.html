@@ -31,7 +31,7 @@
 
 				<h4>시흥캠퍼스 기숙사프로그램위원회는 본 설문조사를 통해 수렴한 여러분의 의견과 요구사항을 기숙사 건립에 최대한 반영할 예정입니다.</h4>
 
-				<ul id="vp-accordion" class="vp-accordion">
+				<ul class="vp-accordion">
 					<li>
 						<h3 class="ac-trigger">시흥캠퍼스, 이렇습니다</h3>
 						<div class="ac-content">
@@ -81,6 +81,16 @@
 				<form class="vp-custom vp-radio vp-swirl" autocomplete="off">
 					<h1><span>1</span> / 11</h1>
 					<h2>학생 기숙사 확충이 필요하다고 생각하십니까?</h2>
+					<ul class="vp-accordion sub">
+						<li>
+							<h5>참고 자료 01</h5>
+							<h3 class="ac-trigger">최근 3년간 기숙사 입사 경쟁률</h3>
+							<div class="ac-content">
+								<h4>sample</h4>
+							</div>
+						</li>
+					</ul>
+					
 					<ul data-input-trigger>
 						<li><input id="r1-1" name="r1" type="radio" class="trigger"><label for="r1-1">필요하다</label></li>
 						<li><input id="r1-2" name="r1" type="radio" class="trigger"><label for="r1-2">필요하지 않다</label></li>
@@ -159,6 +169,17 @@
 				<form class="vp-custom vp-radio vp-swirl" autocomplete="off">
 					<h1><span>7</span> / 11</h1>
 					<h2>어떠한 형태의 기숙을 원하십니까?</h2>
+
+					<ul class="vp-accordion sub">
+						<li>
+<!-- 						<h5>참고 자료 01</h5> -->
+							<h3 class="ac-trigger">다양한 형태의 기숙사 방안</h3>
+							<div class="ac-content">
+								<h4>sample</h4>
+							</div>
+						</li>
+					</ul>
+
 					<ul>
 						<li><input id="r7-1" name="r7" type="radio" class="trigger"><label for="r7-1">관악사와 같은 일반형 기숙사</label></li>
 						<li><input id="r7-2" name="r7" type="radio" class="trigger"><label for="r7-2">주거와 교육을 병행하는 전인교육형 기숙사</label></li>
@@ -173,7 +194,7 @@
 			<div class="section q8"> <!-- # 8 -->
 				<form class="vp-custom vp-radio vp-swirl" autocomplete="off">
 					<h1><span>8</span> / 11</h1>
-					<h2>기숙사 신축 시 희망하는 타입은?</h2>
+					<h2>기숙사 신축 시 희망하는 타입은?<br><span>(아파트형은 방은 개별적으로 사용하되 거실은 공용으로 사용함)</span></h2>
 					<ul>
 						<li><input id="r8-1" name="r8" type="radio" class="trigger"><label for="r8-1">1인실 (독립형)</label></li>
 						<li><input id="r8-2" name="r8" type="radio" class="trigger"><label for="r8-2">2인실 (독립형)</label></li>
@@ -187,6 +208,17 @@
 				<form class="vp-custom vp-radio vp-swirl" autocomplete="off">
 					<h1><span>9</span> / 11</h1>
 					<h2>기숙사의 1실 <span>(관악사 2인실 921~926동(노후)기준)</span> 적정 면적 규모는 어느 정도가 적당하다고 생각하십니까?</h2>
+
+					<ul class="vp-accordion sub">
+						<li>
+						<h5>참고 자료 02</h5>
+							<h3 class="ac-trigger">현재 관악사 기숙사비 및 면적</h3>
+							<div class="ac-content">
+								<h4>sample</h4>
+							</div>
+						</li>
+					</ul>
+
 					<ul>
 						<li><input id="r9-1" name="r9" type="radio" class="trigger"><label for="r9-1">관악사와 동일 (약 14㎡)</label></li>
 						<li><input id="r9-2" name="r9" type="radio" class="trigger"><label for="r9-2">관악사 대비 10% 확대 (약 15.4㎡)</label></li>
@@ -420,7 +452,7 @@
 
 		<script>
 			$( function() {
-				$( '#vp-accordion' ).cbpNTAccordion();
+				$( '.vp-accordion' ).cbpNTAccordion();
 			} );
 		</script>
 
