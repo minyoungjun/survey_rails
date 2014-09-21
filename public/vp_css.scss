@@ -1,11 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
 @font-face {
 	font-family: 'icomoon';
-	src:url('../fonts/icomoon_arrows/icomoon.eot');
-	src:url('../fonts/icomoon_arrows/icomoon.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/icomoon_arrows/icomoon.woff') format('woff'),
-		url('../fonts/icomoon_arrows/icomoon.ttf') format('truetype'),
-		url('../fonts/icomoon_arrows/icomoon.svg#icomoon') format('svg');
+	src:url('../icons/icomoon_arrows/icomoon.eot');
+	src:url('../icons/icomoon_arrows/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../icons/icomoon_arrows/icomoon.woff') format('woff'),
+		url('../icons/icomoon_arrows/icomoon.ttf') format('truetype'),
+		url('../icons/icomoon_arrows/icomoon.svg#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 } /* Iconfont by Icomoon http://icomoon.io/ */
@@ -416,6 +416,26 @@ table.bl {
 		z-index: 100;
 	}
 
+	input[type="text"] {
+		display: none;
+
+		font-size: 1.5em;
+		color: #fff;
+		width: 14em;
+		background: transparent;
+
+		margin: 0 0 0 1em;
+		padding: 0.3em 0.1em 0.3em 0.6em;
+
+		border: 3px solid;
+		border-color: rgba(0,0,0,.3);
+
+		&:focus {
+			outline: none;
+			border-color: #fff;
+		}
+	}
+
 	svg {
 		position: absolute;
 		width: 40px;
@@ -434,6 +454,18 @@ table.bl {
 		}
 	}
 }
+
+
+.show {
+	display: inline-block;
+}
+
+
+::-webkit-input-placeholder { /* WebKit browsers */ color: rgba(0,0,0,.2); }
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color: rgba(0,0,0,.2); }
+::-moz-placeholder { /* Mozilla Firefox 19+ */ color: rgba(0,0,0,.2); }
+:-ms-input-placeholder { /* Internet Explorer 10+ */ color: rgba(0,0,0,.2); }
+
 
 .vp-radio label::before {
 	border-radius: 50%;
