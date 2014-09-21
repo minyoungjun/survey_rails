@@ -76,7 +76,7 @@ bold {
     border-left: 4px solid	#fff;
     padding: 0 0 0 0.5em; }
   .container header h2 {
-    font-size: 2.2em;
+    font-size: 2em;
     font-weight: 400;
     text-align: center;
     margin: 1em 0; }
@@ -94,6 +94,23 @@ bold {
   .container header p {
     font-size: 1.2em;
     font-weight: 400; }
+
+.header {
+  margin: 0 auto;
+  padding: 4em 2em;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.05); }
+  .header h3 {
+    font-size: 1.3em;
+    line-height: 2;
+    margin: 0;
+    padding: 0 2em;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.4); }
+  .header p {
+    font-size: 1.4em;
+    font-weight: 400;
+    padding: 0 2em; }
 
 .vp-accordion {
   list-style: none;
@@ -201,23 +218,6 @@ table {
 table.bl th, table.bl td {
   border: 1px solid;
   border-color: rgba(0, 0, 0, 0.1); }
-
-.header {
-  margin: 0 auto;
-  padding: 4em 2em;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.05); }
-  .header h3 {
-    font-size: 1.3em;
-    line-height: 2;
-    margin: 0;
-    padding: 0 2em;
-    font-weight: 400;
-    color: rgba(0, 0, 0, 0.3); }
-  .header p {
-    font-size: 1.4em;
-    font-weight: 400;
-    padding: 0 2em; }
 
 .section {
   padding: 7em 0; }
@@ -367,7 +367,8 @@ table.bl th, table.bl td {
     .container header h1 {
       font-size: 2.5em; }
     .container header h4 {
-      margin: 0.8em 0 0 0; }
+      margin: 0.8em 0 0 0;
+      line-height: 1.45; }
 
   .vp-accordion {
     margin: 1em 0 0 0; }
