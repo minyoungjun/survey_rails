@@ -380,8 +380,11 @@ table.bl th, table.bl td {
       font-weight: 700; }
     .vp-accordion .ac-content {
       margin: 0; }
+      .vp-accordion .ac-content h4 {
+        line-height: 1.5; }
       .vp-accordion .ac-content p {
-        margin: 0.8em 0; }
+        margin: 0.8em 0;
+        line-height: 1.5; }
 
   .vp-accordion.sub {
     margin: 0 0 2em 0; }

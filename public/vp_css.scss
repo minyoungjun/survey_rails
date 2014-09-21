@@ -546,8 +546,13 @@ table.bl {
 		.ac-content {
 			margin: 0;
 
+			h4 {
+				line-height: 1.5;
+			}
+
 			p {
 				margin: 0.8em 0;
+				line-height: 1.5;
 			}
 		}
 	}
