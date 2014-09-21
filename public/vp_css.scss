@@ -143,10 +143,12 @@ bold {
 	}
 
 	.ac-content {
+		margin: 0 0 0 1.5em;
+
 		h4 {
 			font-size: 1.2em;
 			line-height: 1.65;
-			margin: 2em 0 3em 1.5em;
+			margin: 2em 0 3em 0;
 			font-weight: 400;
 			color: rgba(0,0,0,.4);
 		}
@@ -154,13 +156,13 @@ bold {
 		h5 {
 			font-size: 1.1em;
 			color: rgba(0,0,0,.4);
-			margin: 2em 0 0 1.5em;
+			margin: 2em 0 0 0;
 		}
 
 		p {
 			font-size: 1.1em;
 			line-height: 1.8;
-			margin: 0.5em 0 0.5em 2.8em;
+			margin: 0.5em 0 0.5em 2em;
 			color: rgba(0,0,0,.45);
 
 			span {
@@ -337,6 +339,27 @@ bold {
 		border: none;
 		&::before, &::after {
 			position: relative;
+		}
+	}
+
+	.container header {
+		font-size: 90%;
+		padding: 4em 1em;
+
+		h4 {
+			margin: 0.8em 0 0 0;
+		}
+	}
+
+	.vp-accordion {
+		margin: 1em 0 0 0;
+
+		.ac-content {
+			margin: 0;
+
+			p {
+				margin: 0.8em 0;
+			}
 		}
 	}
 

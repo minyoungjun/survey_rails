@@ -88,26 +88,28 @@ bold {
     font-weight: 400; }
   .vp-accordion .ac-trigger {
     cursor: pointer; }
-  .vp-accordion .ac-content h4 {
-    font-size: 1.2em;
-    line-height: 1.65;
-    margin: 2em 0 3em 1.5em;
-    font-weight: 400;
-    color: rgba(0, 0, 0, 0.4); }
-  .vp-accordion .ac-content h5 {
-    font-size: 1.1em;
-    color: rgba(0, 0, 0, 0.4);
-    margin: 2em 0 0 1.5em; }
-  .vp-accordion .ac-content p {
-    font-size: 1.1em;
-    line-height: 1.8;
-    margin: 0.5em 0 0.5em 2.8em;
-    color: rgba(0, 0, 0, 0.45); }
-    .vp-accordion .ac-content p span {
-      font-weight: 700;
-      color: #fff;
-      letter-spacing: 1px;
-      margin: 0 0.5em 0 0; }
+  .vp-accordion .ac-content {
+    margin: 0 0 0 1.5em; }
+    .vp-accordion .ac-content h4 {
+      font-size: 1.2em;
+      line-height: 1.65;
+      margin: 2em 0 3em 0;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.4); }
+    .vp-accordion .ac-content h5 {
+      font-size: 1.1em;
+      color: rgba(0, 0, 0, 0.4);
+      margin: 2em 0 0 0; }
+    .vp-accordion .ac-content p {
+      font-size: 1.1em;
+      line-height: 1.8;
+      margin: 0.5em 0 0.5em 2em;
+      color: rgba(0, 0, 0, 0.45); }
+      .vp-accordion .ac-content p span {
+        font-weight: 700;
+        color: #fff;
+        letter-spacing: 1px;
+        margin: 0 0.5em 0 0; }
 
 .header {
   margin: 0 auto;
@@ -231,6 +233,19 @@ bold {
     border: none; }
     body::before, body::after {
       position: relative; }
+
+  .container header {
+    font-size: 90%;
+    padding: 4em 1em; }
+    .container header h4 {
+      margin: 0.8em 0 0 0; }
+
+  .vp-accordion {
+    margin: 1em 0 0 0; }
+    .vp-accordion .ac-content {
+      margin: 0; }
+      .vp-accordion .ac-content p {
+        margin: 0.8em 0; }
 
   .li-group, .li-group-3 {
     display: block;
