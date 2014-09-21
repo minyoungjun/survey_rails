@@ -271,12 +271,6 @@ table {
 		padding: 0.4em 1em;
 		text-align: left;
 		vertical-align: top;
-	}
-
-	th {
-		// background-color: rgba(255,255,255,.2);
-		border-bottom: 1px solid #fff;
-		color: #fff;
 		font-weight: 400;
 	}
 
@@ -285,12 +279,28 @@ table {
 		border-color: rgba(0,0,0,.1);
 	}
 
-	.white {
+	// tr:nth-child(2n-1) {
+	// 	background-color: rgba(0,0,0,.1);
+	// }
+
+	.white, .white > td {
 		color: #fff;
 	}
 
 	.bold {
 		font-weight: 700;
+	}
+
+	.bb-white {
+		// background-color: rgba(255,255,255,.2);
+		border-bottom: 1px solid #fff;
+	}
+}
+
+table.bl {
+	th, td {
+		border: 1px solid;
+		border-color: rgba(0,0,0,.1);
 	}
 }
 

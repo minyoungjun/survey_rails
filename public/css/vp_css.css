@@ -179,18 +179,21 @@ table {
   table td, table th {
     padding: 0.4em 1em;
     text-align: left;
-    vertical-align: top; }
-  table th {
-    border-bottom: 1px solid #fff;
-    color: #fff;
+    vertical-align: top;
     font-weight: 400; }
   table tr {
     border-bottom: 1px solid;
     border-color: rgba(0, 0, 0, 0.1); }
-  table .white {
+  table .white, table .white > td {
     color: #fff; }
   table .bold {
     font-weight: 700; }
+  table .bb-white {
+    border-bottom: 1px solid #fff; }
+
+table.bl th, table.bl td {
+  border: 1px solid;
+  border-color: rgba(0, 0, 0, 0.1); }
 
 .header {
   margin: 0 auto;
