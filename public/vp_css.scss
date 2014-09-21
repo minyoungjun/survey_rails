@@ -491,6 +491,18 @@ table {
 		}
 	}
 
+	.vp-accordion.sub {
+		margin: 0 0 2em 0;
+
+		.ac-content {
+			margin: 0;
+		}
+	}
+
+	.table {
+		margin: 0;
+	}
+
 	.li-group, .li-group-3 {
 		display: block;
 		width: 100%;

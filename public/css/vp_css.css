@@ -333,6 +333,14 @@ table {
       .vp-accordion .ac-content p {
         margin: 0.8em 0; }
 
+  .vp-accordion.sub {
+    margin: 0 0 2em 0; }
+    .vp-accordion.sub .ac-content {
+      margin: 0; }
+
+  .table {
+    margin: 0; }
+
   .li-group, .li-group-3 {
     display: block;
     width: 100%;
