@@ -237,11 +237,15 @@ bold {
   .container header {
     font-size: 90%;
     padding: 4em 1em; }
+    .container header h1 {
+      font-size: 2.5em; }
     .container header h4 {
       margin: 0.8em 0 0 0; }
 
   .vp-accordion {
     margin: 1em 0 0 0; }
+    .vp-accordion h3 {
+      font-size: 2em; }
     .vp-accordion .ac-content {
       margin: 0; }
       .vp-accordion .ac-content p {
