@@ -274,7 +274,8 @@ bold {
   .vp-accordion {
     margin: 1em 0 0 0; }
     .vp-accordion h3 {
-      font-size: 2em; }
+      font-size: 1.7em;
+      font-weight: 700; }
     .vp-accordion .ac-content {
       margin: 0; }
       .vp-accordion .ac-content p {
