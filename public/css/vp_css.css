@@ -390,6 +390,9 @@ table.bl th, table.bl td {
     .vp-accordion.sub .ac-content {
       margin: 0; }
 
+  .vp-custom {
+    padding: 0 1.5em; }
+
   .table {
     margin: 0; }
 
