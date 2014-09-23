@@ -219,6 +219,8 @@ table.bl th, table.bl td {
   padding: 7em 0; }
   .section:nth-child(even) {
     background: rgba(0, 0, 0, 0.04); }
+  .section:last-child {
+    padding: 3em 0 4em 0; }
 
 .vp-custom {
   padding: 0 3em;
@@ -349,6 +351,26 @@ table.bl th, table.bl td {
   display: table-cell;
   padding-right: 7em;
   width: 33%; }
+
+button.continue {
+  display: block;
+  padding: 0.82em 1.6em 0.7em 1.6em;
+  border: 3px solid #48a4d5;
+  border-radius: 40px;
+  font-family: 'NanumBarunGothicBold', sans-serif;
+  color: #48a4d5;
+  margin: 0 auto;
+  font-size: 1.7em;
+  text-align: center;
+  background: transparent;
+  cursor: pointer;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s; }
+  button.continue:hover {
+    background: #48a4d5;
+    color: #fff; }
 
 @media screen and (max-width: 50em) {
   body {
