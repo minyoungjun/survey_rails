@@ -459,7 +459,8 @@ button.done {
     .vp-custom li.li-etc {
       line-height: 3; }
       .vp-custom li.li-etc input[type="text"] {
-        margin: 0 0 0 4em; }
+        margin: 0 0 0 4em;
+        width: 10em; }
 
   .table {
     margin: 0; }
