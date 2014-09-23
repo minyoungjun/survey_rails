@@ -25,10 +25,13 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+a {
+  text-decoration: none; }
+
 html {
   font-family: '나눔바른고딕', 'NanumBarunGothic', sans-serif; }
 
-body {
+body, body.done {
   background: #fff;
   color: #48a4d5;
   font-family: '나눔바른고딕', 'NanumBarunGothic', sans-serif;
@@ -38,7 +41,7 @@ body {
   text-decoration: none;
   word-break: keep-all;
   margin: 0; }
-  body::before, body::after {
+  body::before, body.done::before, body::after, body.done::after {
     content: '';
     position: fixed;
     left: 0;
@@ -47,52 +50,74 @@ body {
     height: 1em;
     background: #48a4d5;
     z-index: 1001; }
-  body::after {
+  body::after, body.done::after {
     top: auto;
     bottom: 0; }
+
+body.done {
+  background: #48a4d5;
+  color: #fff;
+  border-color: #fff; }
+  body.done::before, body.done::after {
+    background: #fff; }
 
 bold {
   font-family: 'NanumBarunGothicBold', sans-serif; }
 
-.container {
+.container, .container-done {
   background-image: url(../snu_logo2.svg);
   background-repeat: no-repeat;
   background-position: right top;
   background-attachment: scroll;
   background-size: 35em 35em; }
 
-.container header {
+.container-done {
+  background-image: url(../snu_logo.svg); }
+
+header, body.done header.done {
   margin: 0 auto;
   padding: 4em 15%;
   text-align: left;
   background: transparent; }
-  .container header h1 {
+  header h1, body.done header.done h1 {
     font-size: 2.85em;
     line-height: 1.2;
     margin: 0 0 2em 0;
     font-weight: 400;
     border-left: 4px solid #48a4d5;
     padding: 0 0 0 0.5em; }
-  .container header h2 {
+  header h2, body.done header.done h2 {
     font-size: 2em;
     font-weight: 400;
     text-align: center;
     margin: 1em 0; }
-  .container header h4 {
+  header h4, body.done header.done h4 {
     font-size: 1.2em;
     line-height: 1.65;
     margin: 0.6em 0 0 1.5em;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.4); }
-  .container header h5 {
+  header h5, body.done header.done h5 {
     font-size: 1.05em;
     color: rgba(0, 0, 0, 0.3);
     margin: 2em 0 0 0;
     text-align: center;
     line-height: 1.5; }
-  .container header p {
+  header p, body.done header.done p {
     font-size: 1.2em;
     font-weight: 400; }
+
+body.done header.done {
+  padding: 15em 0;
+  text-align: center; }
+  body.done header.done h1 {
+    font-size: 2.5em;
+    margin: 0.8em 0 3em 0;
+    padding: 0; }
+  body.done header.done h5 {
+    font-size: 1.2em;
+    color: rgba(0, 0, 0, 0.25);
+    letter-spacing: 6px; }
 
 .header {
   margin: 0 auto;
@@ -352,7 +377,7 @@ table.bl th, table.bl td {
   padding-right: 7em;
   width: 33%; }
 
-button.continue {
+button.continue, button.done {
   display: block;
   padding: 0.82em 1.6em 0.7em 1.6em;
   border: 3px solid #48a4d5;
@@ -368,32 +393,39 @@ button.continue {
   transition: color 0.3s;
   -webkit-transition: background 0.3s;
   transition: background 0.3s; }
-  button.continue:hover {
+  button.continue:hover, button.done:hover {
     background: #48a4d5;
     color: #fff; }
 
+button.done {
+  border-color: #fff;
+  color: #fff; }
+  button.done:hover {
+    background: #fff;
+    color: #48a4d5; }
+
 @media screen and (max-width: 50em) {
-  body {
+  body, body.done {
     border: none; }
-    body::before, body::after {
+    body::before, body.done::before, body::after, body.done::after {
       position: relative; }
 
-  .container {
+  .container, .container-done {
     background-position: right top;
     background-size: 15em 15em; }
 
-  .container header {
+  .container header, .container-done header, .container body.done header.done, body.done .container header.done, .container-done body.done header.done, body.done .container-done header.done {
     font-size: 90%;
     padding: 4em 1em; }
-    .container header h1 {
+    .container header h1, .container-done header h1, .container body.done header.done h1, body.done .container header.done h1, .container-done body.done header.done h1, body.done .container-done header.done h1 {
       font-size: 2.3em; }
-    .container header h2 {
+    .container header h2, .container-done header h2, .container body.done header.done h2, body.done .container header.done h2, .container-done body.done header.done h2, body.done .container-done header.done h2 {
       font-size: 1em;
       font-family: 'NanumBarunGothicBold', sans-serif; }
-    .container header h4 {
+    .container header h4, .container-done header h4, .container body.done header.done h4, body.done .container header.done h4, .container-done body.done header.done h4, body.done .container-done header.done h4 {
       margin: 0.8em 0 0 0;
       line-height: 1.5; }
-    .container header h5 {
+    .container header h5, .container-done header h5, .container body.done header.done h5, body.done .container header.done h5, .container-done body.done header.done h5, body.done .container-done header.done h5 {
       font-size: 0.9em; }
 
   .vp-accordion {
