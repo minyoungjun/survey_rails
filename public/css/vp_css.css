@@ -320,8 +320,7 @@ table.bl th, table.bl td {
     margin: 0 0 0 1em;
     padding: 0.3em 0.1em 0.3em 0.6em;
     border: 3px solid;
-    border-color: rgba(0, 0, 0, 0.2);
-    border-radius: 30px; }
+    border-color: rgba(0, 0, 0, 0.2); }
     .vp-custom input[type="text"]:focus {
       outline: none;
       border-color: #48a4d5; }
