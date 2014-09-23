@@ -1,11 +1,17 @@
-@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+@charset "UTF-8";
 @font-face {
   font-family: 'icomoon';
-  src: url("../icons/icomoon_arrows/icomoon.eot");
-  src: url("../icons/icomoon_arrows/icomoon.eot?#iefix") format("embedded-opentype"), url("../icons/icomoon_arrows/icomoon.woff") format("woff"), url("../icons/icomoon_arrows/icomoon.ttf") format("truetype"), url("../icons/icomoon_arrows/icomoon.svg#icomoon") format("svg");
+  src: url("../fonts/icomoon_arrows/icomoon.eot");
+  src: url("../fonts/icomoon_arrows/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon_arrows/icomoon.woff") format("woff"), url("../fonts/icomoon_arrows/icomoon.ttf") format("truetype"), url("../fonts/icomoon_arrows/icomoon.svg#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 /* Iconfont by Icomoon http://icomoon.io/ */
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/NanumBarunGothic.eot");
+  src: url("../fonts/NanumBarunGothic.eot?#iefix") format("embedded-opentype"), url("../fonts/NanumBarunGothic.woff") format("woff"); }
 *,
 *:after,
 *::before {
@@ -13,13 +19,16 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+html {
+  font-family: '나눔바른고딕', 'NanumBarunGothic', sans-serif; }
+
 body {
-  background: #427db9;
-  color: #fff;
-  font-family: 'Noto Sans', sans-serif;
+  background: #fff;
+  color: #48a4d5;
+  font-family: '나눔바른고딕', 'NanumBarunGothic', sans-serif;
   font-weight: 400;
-  border-right: 1em solid #fff;
-  border-left: 1em solid #fff;
+  border-right: 1em solid #48a4d5;
+  border-left: 1em solid #48a4d5;
   text-decoration: none;
   word-break: keep-all;
   margin: 0; }
@@ -30,18 +39,11 @@ body {
     top: 0;
     width: 100%;
     height: 1em;
-    background: #fff;
+    background: #48a4d5;
     z-index: 1001; }
   body::after {
     top: auto;
     bottom: 0; }
-
-a {
-  color: #fff;
-  opacity: 0.7;
-  text-decoration: none; }
-  a:hover, a:focus {
-    opacity: 1; }
 
 bold {
   font-weight: 700; }
@@ -67,13 +69,13 @@ bold {
   margin: 0 auto;
   padding: 4em 15%;
   text-align: left;
-  background: rgba(0, 0, 0, 0.05); }
+  background: #fff; }
   .container header h1 {
     font-size: 2.85em;
     line-height: 1.2;
     margin: 0 0 2em 0;
     font-weight: 400;
-    border-left: 4px solid	#fff;
+    border-left: 4px solid #48a4d5;
     padding: 0 0 0 0.5em; }
   .container header h2 {
     font-size: 2em;
@@ -119,7 +121,7 @@ bold {
   .vp-accordion h3 {
     margin: 0 0 1em 0;
     padding: 1em 0 0.4em 0;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #48a4d5;
     font-size: 2.2em;
     font-weight: 400; }
   .vp-accordion .ac-trigger {
@@ -132,12 +134,12 @@ bold {
       font-variant: normal;
       text-transform: none;
       line-height: 1;
-      color: rgba(0, 0, 0, 0.3);
+      color: #48a4d5;
       margin-right: 0.5em;
       -webkit-font-smoothing: antialiased; }
     .vp-accordion .ac-trigger:hover:before {
       content: "\35";
-      color: inherit; }
+      color: #48a4d5; }
   .vp-accordion .ac-open > .ac-trigger:before {
     content: "\34"; }
   .vp-accordion .ac-content {
@@ -157,7 +159,7 @@ bold {
       color: rgba(0, 0, 0, 0.45); }
       .vp-accordion .ac-content p span {
         font-weight: 700;
-        color: #fff;
+        color: #48a4d5;
         margin: 0 0.5em 0 0; }
       .vp-accordion .ac-content p small {
         font-size: 0.95em;
@@ -173,8 +175,8 @@ bold {
     padding: 0; }
   .vp-accordion.sub h3 {
     font-size: 1.6em;
-    color: rgba(0, 0, 0, 0.3);
-    border-color: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.4);
+    border-color: rgba(0, 0, 0, 0.25);
     margin: 0 0 1em 0;
     padding: 0.4em 0; }
   .vp-accordion.sub h5 {
@@ -197,7 +199,7 @@ table {
   color: rgba(0, 0, 0, 0.45);
   border-top: 3px solid;
   border-bottom: 3px solid;
-  border-color: rgba(0, 0, 0, 0.4);
+  border-color: rgba(0, 0, 0, 0.3);
   font-size: 0.95em; }
   table td, table th {
     padding: 0.4em 1em;
@@ -208,11 +210,11 @@ table {
     border-bottom: 1px solid;
     border-color: rgba(0, 0, 0, 0.1); }
   table .white, table .white > td {
-    color: #fff; }
+    color: #48a4d5; }
   table .bold {
     font-weight: 700; }
   table .bb-white {
-    border-bottom: 1px solid #fff; }
+    border-bottom: 1px solid #48a4d5; }
 
 table.bl th, table.bl td {
   border: 1px solid;
@@ -221,7 +223,7 @@ table.bl th, table.bl td {
 .section {
   padding: 7em 0; }
   .section:nth-child(even) {
-    background: rgba(0, 0, 0, 0.08); }
+    background: rgba(0, 0, 0, 0.04); }
 
 .vp-custom {
   padding: 0 3em;
@@ -231,9 +233,9 @@ table.bl th, table.bl td {
     font-size: 1.7em;
     font-weight: 700;
     margin: 0 0 1.1em 0;
-    color: rgba(0, 0, 0, 0.2); }
+    color: rgba(0, 0, 0, 0.15); }
     .vp-custom h1 span {
-      color: rgba(0, 0, 0, 0.35); }
+      color: #48a4d5; }
   .vp-custom h2 {
     font-size: 2.4em;
     font-weight: 400;
@@ -263,7 +265,7 @@ table.bl th, table.bl td {
     transition: color 0.3s; }
     .vp-custom label::before {
       content: '';
-      border: 4px solid #fff;
+      border: 4px solid #48a4d5;
       -webkit-transition: opacity 0.3s;
       transition: opacity 0.3s; }
   .vp-custom input[type="checkbox"],
@@ -305,7 +307,7 @@ table.bl th, table.bl td {
     left: 5px;
     pointer-events: none; }
     .vp-custom svg path {
-      stroke: #fff;
+      stroke: #48a4d5;
       stroke-width: 13px;
       stroke-linecap: round;
       stroke-linejoin: round;
@@ -335,7 +337,7 @@ table.bl th, table.bl td {
 
 .vp-custom input[type="checkbox"]:checked + label,
 .vp-custom input[type="radio"]:checked + label {
-  color: #fff; }
+  color: #48a4d5; }
   .vp-custom input[type="checkbox"]:checked + label::before,
   .vp-custom input[type="radio"]:checked + label::before {
     opacity: 0.8; }

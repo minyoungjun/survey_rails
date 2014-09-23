@@ -1,14 +1,29 @@
-@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+// @import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
 @font-face {
 	font-family: 'icomoon';
-	src:url('../icons/icomoon_arrows/icomoon.eot');
-	src:url('../icons/icomoon_arrows/icomoon.eot?#iefix') format('embedded-opentype'),
-		url('../icons/icomoon_arrows/icomoon.woff') format('woff'),
-		url('../icons/icomoon_arrows/icomoon.ttf') format('truetype'),
-		url('../icons/icomoon_arrows/icomoon.svg#icomoon') format('svg');
+	src:url('../fonts/icomoon_arrows/icomoon.eot');
+	src:url('../fonts/icomoon_arrows/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon_arrows/icomoon.woff') format('woff'),
+		url('../fonts/icomoon_arrows/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon_arrows/icomoon.svg#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 } /* Iconfont by Icomoon http://icomoon.io/ */
+
+@font-face {
+ font-family: 'NanumBarunGothic';
+ font-weight: normal;
+ font-style: normal;
+ src: url('../fonts/NanumBarunGothic.eot');
+ src: url('../fonts/NanumBarunGothic.eot?#iefix') format('embedded-opentype'),
+ url('../fonts/NanumBarunGothic.woff') format('woff');
+}
+
+
+$main-color: #48a4d5;
+$sub-color: #f6f6f6;
+
+$text-color: #aaa;
 
 *,
 *:after,
@@ -18,13 +33,23 @@
     box-sizing: border-box;
 }
 
+html {
+	font-family: '나눔바른고딕', 'NanumBarunGothic', sans-serif;
+}
+
 body {
-	background: #427db9;
-	color: #fff;
-	font-family: 'Noto Sans', sans-serif;
+	// background: #427db9;
+	// color: #fff;
+	background: #fff;
+	color: $main-color;
+
+	font-family: '나눔바른고딕', 'NanumBarunGothic', sans-serif;
 	font-weight: 400;
-	border-right: 1em solid #fff;
-	border-left: 1em solid #fff;
+	// border-right: 1em solid #fff;
+	// border-left: 1em solid #fff;
+	border-right: 1em solid $main-color;
+	border-left: 1em solid $main-color;
+
 	text-decoration: none;
 
 	// -webkit-font-smoothing: antialiased;
@@ -39,7 +64,8 @@ body {
 		top: 0;
 		width: 100%;
 		height: 1em;
-		background: #fff;
+		// background: #fff;
+		background: $main-color;
 		z-index: 1001;
 	}
 
@@ -49,17 +75,9 @@ body {
 	}
 }
 
-a {
-	color: #fff;
-	opacity: 0.7;
-	text-decoration: none;
-
-	&:hover, &:focus {
-		opacity: 1;
-	}
-}
 
 bold {
+	// font-family: 'NanumBarunGothicBold', sans-serif;
 	font-weight: 700;
 }
 
@@ -110,14 +128,17 @@ bold {
 	padding: 4em 15%;
 	text-align: left;
 	// word-break: keep-all;
-	background: rgba(0,0,0,.05);
+	// background: rgba(0,0,0,.05);
+	background: #fff;
 
 	h1 {
 		font-size: 2.85em;
 		line-height: 1.2;
 		margin: 0 0 2em 0;
 		font-weight: 400;
-		border-left: 4px solid	#fff;
+		// border-left: 4px solid #fff;
+		border-left: 4px solid $main-color;
+
 		padding: 0 0 0 0.5em;
 	}
 
@@ -180,7 +201,9 @@ bold {
 	h3 {
 		margin: 0 0 1em 0;
 		padding: 1em 0 0.4em 0;
-		border-bottom: 1px solid #fff;
+		// border-bottom: 1px solid #fff;
+		border-bottom: 1px solid $main-color;
+
 		font-size: 2.2em;
 		font-weight: 400;
 	}
@@ -197,14 +220,17 @@ bold {
 			font-variant: normal;
 			text-transform: none;
 			line-height: 1;
-			color: rgba(0,0,0,.3);
+			// color: rgba(0,0,0,.3);
+			color: $main-color;
+
 			margin-right: 0.5em;
 			-webkit-font-smoothing: antialiased;
 		}
 
 		&:hover:before {
 			content: "\35";
-			color: inherit;
+			// color: inherit;
+			color: $main-color;
 		}
 	}
 
@@ -234,7 +260,8 @@ bold {
 
 			span {
 				font-weight: 700;
-				color: #fff;
+				// color: #fff;
+				color: $main-color;
 				// letter-spacing: 1px;
 				margin: 0 0.5em 0 0;
 			}
@@ -261,8 +288,8 @@ bold {
 
 	h3 {
 		font-size: 1.6em;
-		color: rgba(0,0,0,.3);
-		border-color: rgba(0,0,0,.3);
+		color: rgba(0,0,0,.4);
+		border-color: rgba(0,0,0,.25);
 		margin: 0 0 1em 0;
 		padding: 0.4em 0;
 	}
@@ -293,7 +320,7 @@ table {
 	color: rgba(0,0,0,.45);
 	border-top: 3px solid;
 	border-bottom: 3px solid;
-	border-color: rgba(0,0,0,.4);
+	border-color: rgba(0,0,0,.3);
 	font-size: 0.95em;
 
 	td, th {
@@ -313,7 +340,8 @@ table {
 	// }
 
 	.white, .white > td {
-		color: #fff;
+		// color: #fff;
+		color: $main-color;
 	}
 
 	.bold {
@@ -322,7 +350,8 @@ table {
 
 	.bb-white {
 		// background-color: rgba(255,255,255,.2);
-		border-bottom: 1px solid #fff;
+		// border-bottom: 1px solid #fff;
+		border-bottom: 1px solid $main-color;
 	}
 }
 
@@ -339,7 +368,7 @@ table.bl {
 	// display: flex;
 
 	&:nth-child(even) {
-		background: rgba(0,0,0,.08);
+		background: rgba(0,0,0,.04);
 	}
 }
 
@@ -352,10 +381,12 @@ table.bl {
 		font-size: 1.7em;
 		font-weight: 700;
 		margin: 0 0 1.1em 0;
-		color: rgba(0,0,0,.2);
+		color: rgba(0,0,0,.15);
+		// color: rgba(72,164,213,.4);
 
 		span {
-			color: rgba(0,0,0,.35);
+			// color: rgba(0,0,0,.35);
+			color: rgba(72,164,213,1);
 		}
 	}
 
@@ -397,7 +428,9 @@ table.bl {
 
 		&::before {
 			content: '';
-			border: 4px solid #fff;
+			// border: 4px solid #fff;
+			border: 4px solid $main-color;
+
 			-webkit-transition: opacity 0.3s;
 			transition: opacity 0.3s;
 		}
@@ -454,7 +487,8 @@ table.bl {
 		pointer-events: none;
 
 		path {
-			stroke: #fff;
+			// stroke: #fff;
+			stroke: $main-color;
 			stroke-width: 13px;
 			stroke-linecap: round;
 			stroke-linejoin: round;
@@ -481,7 +515,8 @@ table.bl {
 
 .vp-custom input[type="checkbox"]:checked + label,
 .vp-custom input[type="radio"]:checked + label {
-	color: #fff;
+	// color: #fff;
+	color: $main-color;
 
 	&::before {
 		opacity: 0.8;
