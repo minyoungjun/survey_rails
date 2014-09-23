@@ -485,22 +485,24 @@ table.bl {
 	}
 
 	input[type="text"] {
-		display: none;
+		// display: none;
 
-		font-size: 1.5em;
-		color: #fff;
-		width: 14em;
+		font-size: 1.6em;
+		color: $main-color;
+		width: 12em;
 		background: transparent;
 
 		margin: 0 0 0 1em;
 		padding: 0.3em 0.1em 0.3em 0.6em;
 
 		border: 3px solid;
-		border-color: rgba(0,0,0,.3);
+		border-color: rgba(0,0,0,.2);
+		border-radius: 30px;
+		// border-color: $main-color;
 
 		&:focus {
 			outline: none;
-			border-color: #fff;
+			border-color: $main-color;
 		}
 	}
 
@@ -680,6 +682,14 @@ button.done {
 
 	.vp-custom {
 		padding: 0 1.6em;
+
+		li.li-etc {
+			line-height: 3;
+
+			input[type="text"] {
+				margin: 0 0 0 4em;
+			}
+		}
 	}
 
 	.table {
