@@ -239,6 +239,7 @@ table.bl th, table.bl td {
     margin: 0 0 30px; }
     .vp-custom h2 span {
       font-size: 70%;
+      line-height: 1.1;
       color: rgba(0, 0, 0, 0.4); }
   .vp-custom ul, .vp-custom ol {
     list-style: none;
@@ -371,7 +372,7 @@ table.bl th, table.bl td {
       margin: 0.8em 0 0 0;
       line-height: 1.5; }
     .container header h5 {
-      font-size: 1em; }
+      font-size: 0.95em; }
 
   .vp-accordion {
     margin: 1em 0 0 0; }
