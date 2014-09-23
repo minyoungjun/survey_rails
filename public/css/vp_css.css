@@ -55,7 +55,7 @@ bold {
   font-family: 'NanumBarunGothicBold', sans-serif; }
 
 .container {
-  background-image: url(../snu_logo.svg);
+  background-image: url(../snu_logo2.svg);
   background-repeat: no-repeat;
   background-position: right top;
   background-attachment: scroll;
@@ -65,7 +65,7 @@ bold {
   margin: 0 auto;
   padding: 4em 15%;
   text-align: left;
-  background: #fff; }
+  background: transparent; }
   .container header h1 {
     font-size: 2.85em;
     line-height: 1.2;
@@ -88,7 +88,8 @@ bold {
     font-size: 1.1em;
     color: rgba(0, 0, 0, 0.3);
     margin: 2em 0 0 0;
-    text-align: center; }
+    text-align: center;
+    line-height: 1.5; }
   .container header p {
     font-size: 1.2em;
     font-weight: 400; }
@@ -195,7 +196,7 @@ table {
   color: rgba(0, 0, 0, 0.45);
   border-top: 3px solid;
   border-bottom: 3px solid;
-  border-color: rgba(0, 0, 0, 0.3);
+  border-color: #48a4d5;
   font-size: 0.95em; }
   table td, table th {
     padding: 0.4em 1em;
