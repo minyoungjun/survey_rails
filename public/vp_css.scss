@@ -506,6 +506,18 @@ table.bl {
 		}
 	}
 
+	textarea {
+		line-height: 1.5;
+		font-size: 1.4em;
+		padding: 1em;
+		color: $main-color;
+		display: block;
+		width: 100%;
+		background: transparent;
+		border: 3px solid $main-color;
+		min-height: 8em;
+	}
+
 	svg {
 		position: absolute;
 		width: 40px;

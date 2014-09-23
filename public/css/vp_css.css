@@ -325,6 +325,16 @@ table.bl th, table.bl td {
     .vp-custom input[type="text"]:focus {
       outline: none;
       border-color: #48a4d5; }
+  .vp-custom textarea {
+    line-height: 1.5;
+    font-size: 1.4em;
+    padding: 1em;
+    color: #48a4d5;
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: 3px solid #48a4d5;
+    min-height: 8em; }
   .vp-custom svg {
     position: absolute;
     width: 40px;
