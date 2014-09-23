@@ -54,16 +54,6 @@ body {
 bold {
   font-family: 'NanumBarunGothicBold', sans-serif; }
 
-.subMenu {
-  height: 2em;
-  width: 100%;
-  z-index: 1000;
-  background: transparent;
-  text-align: center;
-  padding: 1em; }
-  .subMenu .nav {
-    margin: 0 auto; }
-
 .container {
   background-image: url(../snu_logo.svg);
   background-repeat: no-repeat;
@@ -96,7 +86,7 @@ bold {
     color: rgba(0, 0, 0, 0.4); }
   .container header h5 {
     font-size: 1.1em;
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.3);
     margin: 2em 0 0 0;
     text-align: center; }
   .container header p {
@@ -372,13 +362,15 @@ table.bl th, table.bl td {
     font-size: 90%;
     padding: 4em 1em; }
     .container header h1 {
-      font-size: 2.5em; }
+      font-size: 2.3em; }
     .container header h2 {
-      font-size: 1.1em;
+      font-size: 1em;
       font-family: 'NanumBarunGothicBold', sans-serif; }
     .container header h4 {
       margin: 0.8em 0 0 0;
-      line-height: 1.4; }
+      line-height: 1.5; }
+    .container header h5 {
+      font-size: 1em; }
 
   .vp-accordion {
     margin: 1em 0 0 0; }
