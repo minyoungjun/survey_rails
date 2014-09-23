@@ -19,6 +19,16 @@
  url('../fonts/NanumBarunGothic.woff') format('woff');
 }
 
+@font-face {
+ font-family: 'NanumBarunGothicBold';
+ font-weight: normal;
+ font-style: normal;
+ src: url('../fonts/NanumBarunGothicBold.eot');
+ src: url('../fonts/NanumBarunGothicBold.eot?#iefix') format('embedded-opentype'),
+ url('../fonts/NanumBarunGothicBold.woff') format('woff');
+}
+
+
 
 $main-color: #48a4d5;
 $sub-color: #f6f6f6;
@@ -77,8 +87,8 @@ body {
 
 
 bold {
-	// font-family: 'NanumBarunGothicBold', sans-serif;
-	font-weight: 700;
+	font-family: 'NanumBarunGothicBold', sans-serif;
+	// font-weight: 700;
 }
 
 .subMenu {
@@ -178,7 +188,7 @@ bold {
 
 	h3 {
 		font-size: 1.3em;
-		line-height: 2;
+		line-height: 1.5;
 		margin: 0;
 		padding: 0 2em;
 		font-weight: 400;
@@ -259,7 +269,8 @@ bold {
 			color: rgba(0,0,0,.45);
 
 			span {
-				font-weight: 700;
+				// font-weight: 700;
+				font-family: 'NanumBarunGothicBold', sans-serif;
 				// color: #fff;
 				color: $main-color;
 				// letter-spacing: 1px;
@@ -297,7 +308,8 @@ bold {
 	h5 {
 		font-size: 1em;
 		color: rgba(0,0,0,.3);
-		font-weight: 700;
+		// font-weight: 700;
+		font-family: 'NanumBarunGothicBold', sans-serif;
 		margin: 0 1em 0 0;
 	}
 
@@ -344,10 +356,6 @@ table {
 		color: $main-color;
 	}
 
-	.bold {
-		font-weight: 700;
-	}
-
 	.bb-white {
 		// background-color: rgba(255,255,255,.2);
 		// border-bottom: 1px solid #fff;
@@ -379,7 +387,8 @@ table.bl {
 
 	h1 {
 		font-size: 1.7em;
-		font-weight: 700;
+		// font-weight: 700;
+		font-family: 'NanumBarunGothicBold', sans-serif;	
 
 		margin: 0 0 1.1em 0;
 		color: rgba(0,0,0,.15);
@@ -394,7 +403,7 @@ table.bl {
 	h2 {	// main-question
 		font-size: 2.4em;
 		font-weight: 400;
-		line-height: 1.5;
+		line-height: 1.45;
 
 		padding: 0 0 0.5em;
 		margin: 0 0 30px;
@@ -565,12 +574,13 @@ table.bl {
 
 		h2 {
 			font-size: 1.1em;
-			font-weight: 700;
+			// font-weight: 700;
+			font-family: 'NanumBarunGothicBold', sans-serif;
 		}
 
 		h4 {
 			margin: 0.8em 0 0 0;
-			line-height: 1.5;
+			line-height: 1.4;
 		}
 	}
 
@@ -579,7 +589,8 @@ table.bl {
 
 		h3 {
 			font-size: 1.7em;
-			font-weight: 700;
+			// font-weight: 700;
+			font-family: 'NanumBarunGothicBold', sans-serif;
 		}
 
 		.ac-content {
