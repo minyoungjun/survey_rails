@@ -72,7 +72,8 @@ bold {
   background-size: 35em 35em; }
 
 .container-done {
-  background-image: url(../snu_logo.svg); }
+  background-image: url(../snu_logo.svg);
+  background-position: center; }
 
 header, body.done header.done {
   margin: 0 auto;
@@ -112,6 +113,7 @@ body.done header.done {
   text-align: center; }
   body.done header.done h1 {
     font-size: 2.5em;
+    line-height: 1.4;
     margin: 0.8em 0 3em 0;
     padding: 0; }
   body.done header.done h5 {
@@ -413,6 +415,9 @@ button.done {
   .container, .container-done {
     background-position: right top;
     background-size: 15em 15em; }
+
+  .container-done {
+    background-position: center top; }
 
   .container header, .container-done header, .container body.done header.done, body.done .container header.done, .container-done body.done header.done, body.done .container-done header.done {
     font-size: 90%;
