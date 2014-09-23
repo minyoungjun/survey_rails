@@ -286,7 +286,7 @@ bold {
 		padding: 0;
 	}
 
-	h3 {
+	h3 { // 참고자료 제목
 		font-size: 1.6em;
 		color: rgba(0,0,0,.4);
 		border-color: rgba(0,0,0,.25);
@@ -380,6 +380,7 @@ table.bl {
 	h1 {
 		font-size: 1.7em;
 		font-weight: 700;
+
 		margin: 0 0 1.1em 0;
 		color: rgba(0,0,0,.15);
 		// color: rgba(72,164,213,.4);
@@ -393,6 +394,7 @@ table.bl {
 	h2 {
 		font-size: 2.4em;
 		font-weight: 400;
+		line-height: 1.6;
 		padding: 0 0 0.5em;
 		margin: 0 0 30px;
 
@@ -419,6 +421,7 @@ table.bl {
 		display: inline-block;
 		position: relative;
 		font-size: 2em;
+		line-height: 1.4;
 		padding: 0 0 0 80px;
 		vertical-align: top;
 		color: rgba(0,0,0,.28);

@@ -239,6 +239,7 @@ table.bl th, table.bl td {
   .vp-custom h2 {
     font-size: 2.4em;
     font-weight: 400;
+    line-height: 1.6;
     padding: 0 0 0.5em;
     margin: 0 0 30px; }
     .vp-custom h2 span {
@@ -257,6 +258,7 @@ table.bl th, table.bl td {
     display: inline-block;
     position: relative;
     font-size: 2em;
+    line-height: 1.4;
     padding: 0 0 0 80px;
     vertical-align: top;
     color: rgba(0, 0, 0, 0.28);
