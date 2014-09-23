@@ -417,7 +417,7 @@ button.done {
     background-size: 15em 15em; }
 
   .container-done {
-    background-position: center top; }
+    background-position: center; }
 
   .container header, .container-done header, .container body.done header.done, body.done .container header.done, .container-done body.done header.done, body.done .container-done header.done {
     font-size: 90%;
