@@ -168,7 +168,7 @@ header {
 	}
 }
 
-body.done header.done {
+header.done {
 	@extend header;
 
 	padding: 15em 0;
@@ -618,7 +618,7 @@ button.done {
 		background-position: center;
 	}
 
-	.container header {
+	header {
 		font-size: 90%;
 		padding: 4em 1em;
 
@@ -639,6 +639,12 @@ button.done {
 
 		h5 {
 			font-size: 0.9em;
+		}
+	}
+
+	header.done {
+		h5 {
+			letter-spacing: 0px;
 		}
 	}
 
