@@ -47,6 +47,19 @@ a {
 	text-decoration: none;
 }
 
+.vp {
+	font-size: 0.9em;
+	text-align: center;
+	margin: 0 auto;
+	padding: 2em 0;
+	letter-spacing: -0.3px;
+
+	span {
+		font-family: 'NanumBarunGothicBold', sans-serif;
+	}
+
+}
+
 html {
 	font-family: '나눔바른고딕', 'NanumBarunGothic', sans-serif;
 }
@@ -441,6 +454,7 @@ table.bl {
 		position: relative;
 	}
 
+
 	label {
 		display: inline-block;
 		position: relative;
@@ -486,7 +500,7 @@ table.bl {
 
 	input[type="text"] {
 		// display: none;
-
+		display: inline-block;
 		font-size: 1.6em;
 		color: $main-color;
 		width: 12em;
@@ -503,6 +517,14 @@ table.bl {
 		&:focus {
 			outline: none;
 			border-color: $main-color;
+		}
+	}
+
+	.li-etc {
+		display: inline-block;
+
+		input[type="text"] {
+			margin: 0;
 		}
 	}
 
@@ -566,7 +588,7 @@ table.bl {
 
 .li-group {
 	display: table-cell;
-	padding-right: 5em;
+	padding-right: 4em;
 	width: 50%;
 	// float: left;
 }
@@ -577,7 +599,7 @@ table.bl {
 	width: 33%;
 }
 
-button.continue {
+.btn-continue {
 	display: block;
 	padding: 0.82em 1.6em 0.7em 1.6em;
 	border: 3px solid $main-color;
@@ -602,8 +624,8 @@ button.continue {
 	}
 }
 
-button.done {
-	@extend button.continue;
+.btn-done {
+	@extend .btn-continue;
 	border-color: #fff;
 	color: #fff;
 
